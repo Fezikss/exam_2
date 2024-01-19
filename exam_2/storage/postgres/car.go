@@ -73,7 +73,6 @@ func (c carRepo) Get(id string) (models.Car, error) {
 }
 
 func (c carRepo) GetList(req models.GetListRequest) (models.CarsResponse, error) {
-	//BITMADI bitta data ciqarvotdi
 	var (
 		page              = req.Page
 		offset            = (page - 1) * req.Limit
